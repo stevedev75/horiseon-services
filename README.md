@@ -17,5 +17,6 @@
  optimizing css indicators.
  
  Please see screenshot to preview UI.
+ ![image](https://user-images.githubusercontent.com/77076615/110031579-183ea800-7d05-11eb-9f3f-d0bf04bd32b0.png)
  
  
