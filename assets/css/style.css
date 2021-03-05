@@ -1,4 +1,3 @@
-/* The "*" below indicates a "univeral" selector and applied its attributes to the entire index file.*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,24 +8,23 @@ body {
     background-color: #d9dcd6;
 }
 
-/* I changed from .header to header. The following formats the look the the header section.*/
+/* changed from .header to header */
 header {   
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-/* I changed from .header to header */
+/* changed from .header to header */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
-/* I changed from .header to header */
+/* changed from .header to header */
 header h1 .seo {
     color: #d9dcd6;
 }
-/* I removed "header div", added "nav" to make it more semantically meaningful as nav stands for navigation.{ 
-   The following formats the look of the navigation bar. */
+/* removed "header div", added "nav" { */
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -35,12 +33,12 @@ nav {
     font-size: 20px;
 }
 
-/* I changed from .header div ul to header ul{ */
+/* changed from .header div ul to header ul{ */
 header ul {
     list-style-type: none;
 }
 
-/* I changed from .header div ul li to header ul li { */
+/* changed from .header div ul li to header ul li { */
 header ul li {
     display: inline-block;
     margin-left: 25px;
@@ -55,13 +53,11 @@ p {
     font-size: 16px;
 }
 
-/*  I updated .css linkto github pages repository address. This code formats the look
-of the large "hero" background picture at the top of the web page.*/
 .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("https://stevedev75.github.io/horiseon-services/assets/images/digital-marketing-meeting.jpg");
+    background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -82,9 +78,6 @@ of the large "hero" background picture at the top of the web page.*/
     margin-left: 20px;
 }
 
-/* I combined .benefit-lead, -brand, -cost into the following one CSS selector to reduce redundancies in the css file.
-Note: I know that something doesn't work correctly for the margin and color for -cost
-and I wasn't able to figure it out in the end. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -94,29 +87,44 @@ and I wasn't able to figure it out in the end. */
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+}
+
+/* combined .benefit-lead, -brand, -cost CSS
+SOMETHING WON'T WORK FOR -margin and color for brand */
+
+.benefit-lead,
+.benefit-brand,
+.benfit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/* I combined .benefit-lead, -brand, -cost h3 CSS into one selector to reduce redundancies.*/
+/* combinging .benefit-lead, -brand, -cost h3 CSS */
+
 h3            {
 margin-bottom: 10px;
 text-align: center;
 }
 
-/* I combined .benefit-lead, -brand, -cost img into one CSS selector to reduce redundancies.*/
- .benefits img       {
+/* combinging .benefit-lead, -brand, -cost img CSS */
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img
+        {
     display: block;
     margin: 10px auto;
     max-width: 150px;   
 }
+/*Combined 
+.search engine-management,
+.online-reputation-management,
+.social-media-marketing CSS
+*/
 
-/* In order to reduce redudancies in the css, I combined the following three
-selectors into one:
 .search-engine-optimization,
 .online-reputation-management,
-.social-media-marketing */
-.content                        {
+.social-media-marketing
+                        {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -125,28 +133,36 @@ selectors into one:
     color: #ffffff;
 }
 
-/* In order to reduce redudancies in the css, I combined the following three selectors
-into one single selector: 
+/* Work on the next chunk of code */
+
+/*Combined 
 .search-engine-management,
 .online-reputation-management,
-.social-media-marketing "imgs" CSS */
-.content img         
+.social-media-marketing "imgs" CSS
+*/
+
+.search-engine-optimization img,
+.online-reputation-management img,
+.social-media-marketing img
         {
     max-height: 200px;
 }
 
-/* In order to reduce redudancies in the css, I combined the following three
-selectors into one:
+/*Combined 
 .search-engine-management h2,
 .online-reputation-management h2,
-.social-media-marketing h2 */
-.content h2
+.social-media-marketing h2 CSS
+*/
+/* Something Wacky with ".search-engine-management" one*/
+.search-engine-management h2,
+.online-reputation-management h2,
+.social-media-marketing h2 
            {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-/* I changed .footer to footer as related to html change from <div> to <footer> to make it more semantically meaningful.*/
+/* changed .footer to footer as related to html change from <div> to <footer>*/
 footer {
     padding: 30px;
     clear: both;
