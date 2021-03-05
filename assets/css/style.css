@@ -1,3 +1,4 @@
+/* The following is a universal selector that applies to the whole file.  */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +9,8 @@ body {
     background-color: #d9dcd6;
 }
 
-/* changed from .header to header */
+/* Changed from .header to header */
+/* The 3 items below style the "Horiseon" on the top left of the page.  */
 header {   
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,6 +27,8 @@ header h1 .seo {
     color: #d9dcd6;
 }
 /* removed "header div", added "nav" { */
+/* The nav bar and following two details below it are for website navigation and the links on the top right
+point to different places on the web page */    
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -43,7 +47,7 @@ header ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* The following two itmes style everything with an "a" tag and "p" tag, respectively */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -53,6 +57,9 @@ p {
     font-size: 16px;
 }
 
+
+/* The hero selector refers to the large picture on the top half of the page and
+the styling associated with it.  */
 .hero {
     height: 800px;
     width: 100%;
@@ -62,6 +69,9 @@ p {
     background-position: center;
 }
 
+
+/* The following 3 selectors apply style to the three horizontal boxes of
+content on the bottom half of the web page. */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -78,6 +88,7 @@ p {
     margin-left: 20px;
 }
 
+/* The following     */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -89,37 +100,41 @@ p {
     background-color: #2589bd;
 }
 
+/* The following X selectors style the vertical "box" on the right
+side of the web page.  */
 /* combined .benefit-lead, -brand, -cost CSS
-SOMETHING WON'T WORK FOR -margin and color for brand */
-
 .benefit-lead,
 .benefit-brand,
-.benfit-cost {
+.benfit-cost */
+
+.benefit
+            {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/* combinging .benefit-lead, -brand, -cost h3 CSS */
+/* combined .benefit-lead, -brand, -cost h3 CSS */
 
 h3            {
 margin-bottom: 10px;
 text-align: center;
 }
 
-/* combinging .benefit-lead, -brand, -cost img CSS */
+/* combined .benefit-lead, -brand, -cost img CSS 
 .benefit-lead img,
 .benefit-brand img,
-.benefit-cost img
+.benefit-cost img */
+.benefit img
         {
     display: block;
     margin: 10px auto;
     max-width: 150px;   
 }
+
 /*Combined 
-.search engine-management,
+.search engine-optimization,
 .online-reputation-management,
-.social-media-marketing CSS
-*/
+.social-media-marketing CSS */
 
 .search-engine-optimization,
 .online-reputation-management,
@@ -133,17 +148,12 @@ text-align: center;
     color: #ffffff;
 }
 
-/* Work on the next chunk of code */
-
 /*Combined 
 .search-engine-management,
 .online-reputation-management,
-.social-media-marketing "imgs" CSS
-*/
+.social-media-marketing "imgs" CSS */
 
-.search-engine-optimization img,
-.online-reputation-management img,
-.social-media-marketing img
+.content img
         {
     max-height: 200px;
 }
@@ -151,13 +161,8 @@ text-align: center;
 /*Combined 
 .search-engine-management h2,
 .online-reputation-management h2,
-.social-media-marketing h2 CSS
-*/
-/* Something Wacky with ".search-engine-management" one*/
-.search-engine-management h2,
-.online-reputation-management h2,
-.social-media-marketing h2 
-           {
+.social-media-marketing h2 CSS */
+ .content h2          {
     margin-bottom: 20px;
     font-size: 36px;
 }
