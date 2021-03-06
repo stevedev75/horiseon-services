@@ -1,30 +1,39 @@
+/* The following "*" is a universal selector that applies some basic styling to the  width and height properties of the borders on the page. */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* The following selecor styles the background color of the "body" section of the page. */
 body {
     background-color: #d9dcd6;
 }
 
-/* changed from .header to header */
+/* I changed the selector from .header to header to reflect changes in the html after I switched from <div> to <section>.*/
+/* The 3 items below style the Horiseon "portion" on the top left of the web page. */
+/* The font family refers to the font stule preference prioritized in order from left to right */
+/* and provides some fall backs in case some browsers don't have the preferred fonts.*/
 header {   
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-/* changed from .header to header */
+/* I changed from .header to header. */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
-/* changed from .header to header */
+/* I changed from .header to header. */
 header h1 .seo {
     color: #d9dcd6;
 }
-/* removed "header div", added "nav" { */
+
+
+/* I removed <div> element and switched to a <nav> which means navigation bar which is where the 
+website navigation and links on the top right point to different places on the web page. { */
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -33,17 +42,20 @@ nav {
     font-size: 20px;
 }
 
-/* changed from .header div ul to header ul{ */
+/* To be more semantically meaningful, I changed the following two selectors from the */ 
+/* <div>-related .header div ul and li to to the header ul and ul li which means unordered list and list */
+/* respectively, i.e. the different links on the top right.{ */
 header ul {
     list-style-type: none;
 }
 
-/* changed from .header div ul li to header ul li { */
+
 header ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* This following two selectors style any <a> or <p> elements throughout the page. */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -53,7 +65,8 @@ p {
     font-size: 16px;
 }
 
-/*  Updated .css linkto github pages repository address*/
+/* The .hero selector refers to the large image on the top of half of the page */
+/* determines the associated styling. I updated .css linkto github pages repository address*/
 .hero {
     height: 800px;
     width: 100%;
@@ -63,6 +76,8 @@ p {
     background-position: center;
 }
 
+/* The following 3 selectors apply style and horizontal direction to the three boxes of content
+that cover most of the bottom half of the web page. */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -79,6 +94,7 @@ p {
     margin-left: 20px;
 }
 
+
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -90,12 +106,15 @@ p {
     background-color: #2589bd;
 }
 
-/* combined .benefit-lead, -brand, -cost CSS
-SOMETHING WON'T WORK FOR margin and color for -cost */
+
+
+/*I stacked .benefit-lead, -brand, -cost CSS that contribute
+ style to the three items on the right vertical box on page. */
+
 .benefit-lead,
 .benefit-brand, 
-.benfit-cost
-            {
+.benfit-cost 
+    {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -110,18 +129,15 @@ text-align: center;
 /* combined .benefit-lead, -brand, -cost img CSS */
 .benefit-lead img,
 .benefit-brand img,
-.benefit-cost img
+.benefit-cost img 
         {
     display: block;
     margin: 10px auto;
     max-width: 150px;   
 }
 
-/* combined
-.search-engine-optimization,
-.online-reputation-management,
-.social-media-marketing CSS
-*/
+/* I stacked .search-engine-optimization,.online-reputation-management,.social-media-marketing CSS
+to reduce some redundancy in the css. */
 
 .search-engine-optimization,
 .online-reputation-management,
@@ -135,13 +151,8 @@ text-align: center;
     color: #ffffff;
 }
 
-/* Work on the next chunk of code */
-
-/*Combined 
-.search-engine-management,
-.online-reputation-management,
-.social-media-marketing "imgs" CSS
-*/
+/* I stacked .search-engine-optimization,.online-reputation-management,.social-media-marketing imgs in CSS
+to reduce some redundancy in the css. */
 
 .search-engine-optimization img,
 .online-reputation-management img,
@@ -150,11 +161,8 @@ text-align: center;
     max-height: 200px;
 }
 
-/*Combined 
-.search-engine-management h2,
-.online-reputation-management h2,
-.social-media-marketing h2 CSS
-*/
+/*I stacked .search-engine-management h2, .online-reputation-management h2, and .social-media-marketing h2 to
+reduce some redundancy on the cSS.*/
 
 .search-engine-optimization h2,
 .online-reputation-management h2,
@@ -164,7 +172,7 @@ text-align: center;
     font-size: 36px;
 }
 
-/* changed .footer to footer as related to html change from <div> to <footer>*/
+/* I changed .footer to footer as related to html change from <div> to <footer>*/
 footer {
     padding: 30px;
     clear: both;
